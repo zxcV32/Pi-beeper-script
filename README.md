@@ -24,7 +24,8 @@ Ofcourse Python3 required, it's almost end of 2019. You can change the GPIO pin 
 
 Make the script executable so that we do not have to type python at everytime
 
-`chmod +x beep.py`
+`chmod +x beep.py` then you can simply type `./beep.py` and run it as an executable.
+
 
 ------
 **Usecase:**
