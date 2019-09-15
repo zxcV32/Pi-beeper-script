@@ -1,6 +1,7 @@
 # Pi-beeper-script
 
 This script is used to control a buzzer conencted to Raspberry pi 3 Model B on GPIO pin 18.
+
 Inline Ofcourse Python3 required, it\'s almost end of 2019. You can change the GPIO pin connected to the VCC of the buzzre by changing the value of 'GPIO_Pin' variable at line 29
 
 Usage:
