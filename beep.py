@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-/*
+'''
 Author: Ashwani Sharma
 Website: zxcv32.com
 Email: ashwani@zxcv32.com
 Description: This script allows you to make beeping sound from a raspbery pi which is connected with a buzzer that accept either high or low value. You can specify number of beeps, beep duration and delay between two consecutive beeps.
-*/
-
-
+'''
 
 import RPi.GPIO as GPIO
 import time, sys, logging, traceback, os.path
@@ -20,7 +18,6 @@ try:
     homedir = os.path.expanduser("~")
     filePath = homedir+"/.script-logs/"
     fileName = "beep.log"
-    
     
     if not os.path.exists(filePath):
         os.makedirs(filePath)
