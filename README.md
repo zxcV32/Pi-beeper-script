@@ -75,7 +75,7 @@ Add the following line before `exit 0` if it is there,
 I like to beep twice at shutdown
 
 
-`
+```
 [Unit]
 Description=Beep before Shutting Down
 
@@ -87,13 +87,14 @@ ExecStop=/home/pi/scripts/beep.py 2 100 200
 
 [Install]
 WantedBy=multi-user.target
-`
+```
+
 Enable and start the service
 
-`
+```
 sudo systemctl enable beep-before-shut.service
 sudo systemctl start beep-before-shut.service
-`
+```
 
 ------
 
