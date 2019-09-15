@@ -4,28 +4,28 @@ This script is used to control a buzzer conencted to Raspberry pi 3 Model B on G
 
 Ofcourse Python3 required, it's almost end of 2019. You can change the GPIO pin connected to the VCC of the buzzre by changing the value of `GPIO_Pin` variable at line 29
 
-****Usage:
+**Usage:**
 
-**Defaults
+**Defaults**
 
 `python beep.py`
 
-**5 beeps
+**5 beeps**
 
 `python beep.py 5`
 
-**5 beeps with each each beep lasting 500 milliseconds
+**5 beeps with each each beep lasting 500 milliseconds**
 
 `python beep.py 5 500`
 
-**5 beeps with each each beep lasting 500 milliseconds and 800 milliseconds delay in between
+**5 beeps with each each beep lasting 500 milliseconds and 800 milliseconds delay in between**
 
 `python beep.py 5 500 800`
 
 ------
-***Usecase:
+**Usecase:**
 
-**1) Beep at boot to know that the pi is ready.
+**1) Beep at boot to know that the pi is ready.**
 
 To beep the pi at boot, you can add a @reboot cronjob. 
 
@@ -37,11 +37,11 @@ Add the following at the end of the file.
 
 ------
 
-**2) Use as an output method to report any bug or notification from any other code
+**2) Use as an output method to report any bug or notification from any other code**
 
 ------
 
-**3) Use this as a command
+**3) Use this as a command**
 
 First make the script executable
 
@@ -55,7 +55,7 @@ Add this at the end
 
 `alias beep='$HOME/scripts/beep.py'`
 
-***OR
+**OR**
 
 Create a symbolic link file in `/usr/bin`
 
